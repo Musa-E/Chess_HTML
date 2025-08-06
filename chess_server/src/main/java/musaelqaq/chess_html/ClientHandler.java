@@ -32,7 +32,7 @@ public class ClientHandler implements Runnable {
 
                 System.out.println("Client: " + input);
 
-                out.println("Echo: " + input);
+                out.println(input);
 
                 // Exits the loop
                 if (input.equalsIgnoreCase("exit")) {

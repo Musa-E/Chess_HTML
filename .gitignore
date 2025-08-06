@@ -1,5 +1,5 @@
 # Maven target directory
-/target/
+**/target/
 /javafx-sdk*/
 
 # Eclipse / IntelliJ / NetBeans project files (just in case)

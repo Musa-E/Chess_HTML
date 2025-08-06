@@ -27,8 +27,8 @@ public class Server {
                 System.out.println("Client connected.");
 
                 // Create a thread to handle the client
-                // ClientHandler handler = new ClientHandler(clientSocket);
-                // new Thread(handler).start();
+                ClientHandler handler = new ClientHandler(clientSocket);
+                new Thread(handler).start();
             }
 
         } catch (IOException e) {
@@ -45,7 +45,7 @@ public class Server {
             if (serverSocket != null)
                 serverSocket.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // System.err.println() ?
         }
     }
 }
