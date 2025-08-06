@@ -1,0 +1,37 @@
+# Maven target directory
+/target/
+/javafx-sdk*/
+
+# Eclipse / IntelliJ / NetBeans project files (just in case)
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+nbproject/
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Maven-specific files
+.mvn/wrapper/maven-wrapper.jar
+
+# Compiled class files
+*.class
+
+# JavaFX build artifacts (if any custom build directories exist)
+out/
+bin/
+build/
+
+# Temporary files
+*.tmp
+*.swp
+*~
