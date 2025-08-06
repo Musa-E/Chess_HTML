@@ -15,6 +15,9 @@ public class Client {
         String ServerIP = "";
         int portNum = 5000;
 
+        // System.out.println("\nServer port (default = 5000): ");
+        // portNum = System.in;
+        
         try {
 
             Socket socket = new Socket(ServerIP, portNum);

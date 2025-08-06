@@ -24,7 +24,7 @@ public class Server {
 
             while (isRunning) {
                 Socket clientSocket = serverSocket.accept();
-                System.out.println("Client connected.");
+                System.out.println(coloredTerminal.YELLOW + "Client has joined the server." + coloredTerminal.RESET);
 
                 // Create a thread to handle the client
                 ClientHandler handler = new ClientHandler(clientSocket);

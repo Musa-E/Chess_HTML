@@ -18,7 +18,7 @@ public class ClientHandler implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("New Thread Created!");
+        // System.out.println("New Thread Created!");
 
         try {
             in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
@@ -36,6 +36,7 @@ public class ClientHandler implements Runnable {
 
                 // Exits the loop
                 if (input.equalsIgnoreCase("exit")) {
+                    System.out.println(coloredTerminal.YELLOW  + "Client has left the server." + coloredTerminal.RESET);
                     break;
                 }
             }
